@@ -7,11 +7,12 @@ public class DialogeManager : MonoBehaviour
 {
     public Text dialogueText;       
     public Button nextButton;       
-    public float letterDelay = 0.1f; 
+    public float letterDelay = 0.1f;
 
-    
+    public GameObject Close2Scene;
     public GameObject NextScene;
     public GameObject CloseScene;
+    
 
     private string Name;
 
@@ -48,6 +49,7 @@ public class DialogeManager : MonoBehaviour
                 nextButton.interactable = false; 
                 NextScene.SetActive(true);
                 CloseScene.SetActive(false);
+                Close2Scene.SetActive(false);
             }
         }
     }
