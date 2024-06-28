@@ -42,7 +42,10 @@ public class DialogeManager : MonoBehaviour
             if (currentDialogueIndex < dialogues.Length)
             {
                 StartCoroutine(DisplayText(dialogues[currentDialogueIndex]));
-                //AudioSources[currentDialogueIndex].Play();
+                if (AudioSources[currentDialogueIndex] != null)
+                AudioSources[currentDialogueIndex].Play();
+                
+                  
             }
             else
             {
