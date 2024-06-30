@@ -1,2 +1,2 @@
-Build path: G:/GitHub/YouKinito/YouKinito/YouKinito/Build/7
-Build number: 9
+Build path: G:/GitHub/YouKinito/YouKinito/YouKinito/Build/10
+Build number: 12

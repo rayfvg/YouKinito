@@ -23,15 +23,21 @@ private void OnDisable() => YandexGame.RewardVideoEvent -= Rewarded;
 // Подписанный метод получения награды
 void Rewarded(int id)
 {
-    // Если ID = 1, то выдаём "+100 монет"
-    if (id == 1)
+        // Если ID = 1, то выдаём "+100 монет"
+        if (id == 1)
         {
             FrendlyOpenScene.SetActive(true);
             FrendlyCloseScene.SetActive(false);
         }
 
-    // Если ID = 2, то выдаём "+оружие".
-    else if (id == 2)
+        // Если ID = 2, то выдаём "+оружие".
+        else if (id == 2)
+        {
+            DestrOpenScene.SetActive(true);
+            DestrCloseScene.SetActive(false);
+        }
+
+        else if (id == 3)
         {
             DestrOpenScene.SetActive(true);
             DestrCloseScene.SetActive(false);
